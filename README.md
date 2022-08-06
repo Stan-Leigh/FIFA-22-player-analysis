@@ -1,5 +1,5 @@
 # FIFA-22-player-analysis
-
+![](Images/EA%20FIFA%2022.jpg)
 ## Introduction
 This project analyzes data on the players in the Career mode for FIFA 22. The dataset was gotten from [kaggle](https://www.kaggle.com/datasets/stefanoleone992/fifa-22-complete-player-dataset) (`players_22.csv`) and contains 19000+ players and 110 columns that represents different attributes of the players. Some of the columns are age, preferred foot, height, weight, nationality, club and a lot more columns that rate players on different skills.
 
@@ -36,9 +36,11 @@ To run a k-means clustering:
 * Run steps 3 and 4 until the centroids stop changing. Each run is referred to as an iteration.
 
 In this model, I used rating of players in different positions as the features for my KMeans algorithm. This meant that players that were forwards would have been rated higher for football positions that represented forwards and so on. I then implemented an algorithm by hand that goes through iterations and calculates the centroids for each of the 4 clusters using the geometric mean of the points in the cluster. I applied PCA (principal component analysis) to reduce the features to 2D and I visualized what the final clusters and centroid positions looked like.
+![](Images/KMeans.png)
 
 After, I implemented the same algorithm using `KMeans` from `sklearn.cluster` and compared results.
 
 
 ## Extras
 I also designed a dashboard in Power BI (because why not:upside_down_face:) that allows comparison of different players, their skills and other characteristics.
+![](Images/FIFA%20Dashboard.png)
